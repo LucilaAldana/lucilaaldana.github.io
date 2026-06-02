@@ -1,0 +1,417 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Lucila Aldana Quiñonez | Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Inter:wght@400;500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+		<style>
+			/* ── LAQ Brand: Coastal Luxe Palette ── */
+			:root {
+				--color-bg:         #F4FAFF;
+				--color-bg-warm:    #FDFBF7;
+				--color-navy:       #3C7A9D;
+				--color-teal:       #0D8A6E;
+				--color-pink:       #C96A7E;
+				--color-text:       #2a3d4a;
+			}
+
+			/* Base background */
+			body, #wrapper { background-color: var(--color-bg) !important; }
+
+			/* Intro section */
+			#intro {
+				background-color: var(--color-navy) !important;
+				background-image: none !important;
+			}
+			#intro h1 {
+				font-family: 'Outfit', sans-serif !important;
+				font-weight: 500 !important;
+				letter-spacing: 0.12em !important;
+				text-transform: uppercase !important;
+				color: #ffffff !important;
+			}
+			#intro p {
+				font-family: 'Inter', sans-serif !important;
+				font-weight: 400 !important;
+				color: rgba(255,255,255,0.88) !important;
+			}
+			#intro .divider {
+				border-top: 1px solid rgba(255,255,255,0.3);
+				margin: 0.6em auto 0.8em;
+				width: 60px;
+			}
+			/* Tagline accent in intro using Playfair */
+			#intro h1 em, #intro p em {
+				font-family: 'Playfair Display', serif !important;
+				font-style: italic !important;
+				color: #C8E8F5 !important;
+			}
+			/* Intro CTA button */
+			#intro .button {
+				border-color: rgba(255,255,255,0.5) !important;
+				color: #fff !important;
+			}
+			#intro .button:hover {
+				background-color: rgba(255,255,255,0.15) !important;
+			}
+
+			/* Nav bar */
+			#nav {
+				background-color: var(--color-bg-warm) !important;
+				border-bottom: 2px solid var(--color-navy) !important;
+			}
+			#nav ul.links a {
+				font-family: 'Inter', sans-serif !important;
+				font-weight: 500 !important;
+				color: var(--color-navy) !important;
+				text-transform: uppercase !important;
+				letter-spacing: 0.08em !important;
+				font-size: 0.78em !important;
+			}
+			#nav ul.links li.active a,
+			#nav ul.links a:hover {
+				color: var(--color-teal) !important;
+				border-bottom-color: var(--color-teal) !important;
+			}
+			#nav ul.icons a { color: var(--color-navy) !important; }
+			#nav ul.icons a:hover { color: var(--color-teal) !important; }
+
+			/* Lang switch button */
+			a.lang-switch {
+				font-family: 'Inter', sans-serif !important;
+				font-size: 0.72em !important;
+				font-weight: 500 !important;
+				letter-spacing: 0.1em !important;
+				color: rgba(255,255,255,0.75) !important;
+				border: 1px solid rgba(255,255,255,0.35) !important;
+				padding: 0.3em 0.7em !important;
+				border-radius: 3px !important;
+				text-decoration: none !important;
+				position: absolute !important;
+				top: 1.2em !important;
+				right: 1.4em !important;
+				transition: all 0.2s ease !important;
+			}
+			a.lang-switch:hover {
+				background-color: rgba(255,255,255,0.15) !important;
+				color: #fff !important;
+			}
+
+			/* Main content area */
+			#main { background-color: var(--color-bg) !important; }
+
+			/* Project cards */
+			#main article {
+				background-color: var(--color-bg-warm) !important;
+				border: 1px solid rgba(60,122,157,0.12) !important;
+				box-shadow: 0 2px 18px rgba(60,122,157,0.07) !important;
+				transition: box-shadow 0.25s ease, transform 0.25s ease !important;
+			}
+			#main article:hover {
+				box-shadow: 0 6px 28px rgba(60,122,157,0.14) !important;
+				transform: translateY(-2px) !important;
+			}
+			#main article header h2 {
+				font-family: 'Outfit', sans-serif !important;
+				font-weight: 500 !important;
+				color: var(--color-navy) !important;
+				letter-spacing: 0.01em !important;
+			}
+			#main article header h2 a { color: var(--color-navy) !important; }
+			#main article header h2 a:hover { color: var(--color-teal) !important; }
+
+			/* Tool tags (date span) */
+			#main article .date {
+				font-family: 'Inter', sans-serif !important;
+				font-size: 0.72em !important;
+				font-weight: 500 !important;
+				color: var(--color-teal) !important;
+				letter-spacing: 0.06em !important;
+				text-transform: uppercase !important;
+			}
+
+			/* Project card body text */
+			#main article p {
+				font-family: 'Inter', sans-serif !important;
+				font-size: 0.9em !important;
+				color: var(--color-text) !important;
+				line-height: 1.7 !important;
+			}
+
+			/* "View Project" buttons */
+			.actions.special .button {
+				font-family: 'Inter', sans-serif !important;
+				font-weight: 500 !important;
+				font-size: 0.75em !important;
+				letter-spacing: 0.1em !important;
+				text-transform: uppercase !important;
+				border-color: var(--color-navy) !important;
+				color: var(--color-navy) !important;
+				border-radius: 3px !important;
+			}
+			.actions.special .button:hover {
+				background-color: var(--color-navy) !important;
+				color: #fff !important;
+			}
+
+			/* Footer */
+			#footer {
+				background-color: var(--color-navy) !important;
+				color: rgba(255,255,255,0.85) !important;
+			}
+			#footer h3 {
+				font-family: 'Outfit', sans-serif !important;
+				font-weight: 500 !important;
+				letter-spacing: 0.1em !important;
+				text-transform: uppercase !important;
+				font-size: 0.75em !important;
+				color: rgba(255,255,255,0.5) !important;
+			}
+			#footer p, #footer section.alt p {
+				font-family: 'Inter', sans-serif !important;
+				color: rgba(255,255,255,0.85) !important;
+				font-size: 0.9em !important;
+			}
+			#footer .button {
+				font-family: 'Inter', sans-serif !important;
+				font-weight: 500 !important;
+				font-size: 0.78em !important;
+				letter-spacing: 0.1em !important;
+				text-transform: uppercase !important;
+				border-color: rgba(255,255,255,0.45) !important;
+				color: #fff !important;
+			}
+			#footer .button:hover {
+				background-color: rgba(255,255,255,0.15) !important;
+			}
+			#footer .icons a { color: rgba(255,255,255,0.6) !important; }
+			#footer .icons a:hover { color: #fff !important; }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<a href="indice.html" class="lang-switch">ES</a>
+						<h1>Lucila Aldana Quiñonez</h1>
+						<div class="divider"></div>
+						<h1>Business &amp; Marketing<br />
+						Data Analyst</h1>
+						<p>Marketing background. Operations experience. Analytical rigour.<br />
+						I turn complex business and marketing data into clear, actionable insights —<br />
+						combining strategic thinking with real operational context.<br />
+						<em>Analysis with context. Strategy with clarity.</em></p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Projects</a></li>
+							<li><a href="about.html">About Me</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/lucilaaquinonez/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/LucilaAldana" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<span class="date">Tools: MySQL · Generative AI</span>
+										<h2>Customer Insights & Menu Performance Analysis for Taste of the World Café</h2>
+									</header>
+									<span class="image fit"><img src="images/pic-taste-world-cafe.jpg" alt="" /></span>
+									<p>Customer and menu performance analysis for a restaurant using transactional data to evaluate sales trends, pricing impact, revenue contribution, and ordering patterns, supporting menu optimization and promotional strategy decisions, conducted using SQL.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/LucilaAldana/customer-insights-menu-performance-cafe" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Tools: Power BI · Generative AI</span>
+										<h2>Maven Toys’ Store & Product Performance Dashboard</h2>
+									</header>
+									<span class="image fit"><img src="images/pic-maven-toys.jpg" alt="" /></span>
+									<p>Interactive retail dashboard in Power BI analyzing revenue, profit, store performance, product trends, and inventory health to support data-driven decision-making across multiple toy store locations.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/LucilaAldana/product-performance-analysis-toys-store" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Tools: Tableau · Python · Generative AI</span>
+										<h2>British Airways Customer Reviews Analysis</h2>
+									</header>
+									<span class="image fit"><img src="images/pic-ba-reviews.jpg" alt="" /></span>
+									<p>Interactive Tableau dashboard and Python-based sentiment analysis exploring 1,320 British Airways customer reviews to identify drivers of recommendation, dissatisfaction patterns, and service improvement opportunities.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/LucilaAldana/customer-reviews-analysis-british-airways" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Tools: Power BI · Generative AI</span>
+										<h2>Identifying Growth Opportunities & Operational Gaps at Plant Co.</h2>
+									</header>
+									<span class="image fit"><img src="images/pic-plantco.jpg" alt="" /></span>
+									<p>Business performance analysis identifying revenue gaps, low-margin products, and operational inefficiencies at Plant Co. to uncover growth opportunities and support data-driven strategic decision-making through an interactive Power BI dashboard.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/LucilaAldana/growth-opportunity-operational-analysis-plant-company" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Tools: MySQL · Generative AI</span>
+										<h2>Data Cleaning & Exploratory Analysis of World Layoffs in MySQL</h2>
+									</header>
+									<span class="image fit"><img src="images/pic-world-layoffs.jpg" alt="" /></span>
+									<p>SQL-based data cleaning and exploratory analysis of global layoff data, including duplicate removal, null handling, standardization, and trend exploration to prepare a structured dataset for analysis.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/LucilaAldana/data-cleaning-exploration-world-layoffs" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Tools: Python · Generative AI</span>
+										<h2>Sales Performance & Customer Behavior Analysis</h2>
+									</header>
+									<span class="image fit"><img src="images/pic-ecommerce-sales-customers.jpg" alt="" /></span>
+									<p>Exploratory analysis of U.S. e-commerce transactional data to identify sales growth drivers, seasonal patterns, customer segmentation behavior, and product performance, delivering actionable insights for marketing and operational optimization.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/LucilaAldana/ecommerce-sales-customer-behavior-analysis" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Tools: Tableau · Generative AI</span>
+										<h2>Bank Customer Churn Analysis</h2>
+									</header>
+									<span class="image fit"><img src="images/pic-bank-churn.jpg" alt="" /></span>
+									<p>Interactive Tableau dashboard analyzing 10,000 bank customers to identify churn drivers, high-risk segments, and retention opportunities, with complaint behavior emerging as the dominant predictor of customer exit.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/LucilaAldana/customer-churn-analysis-bank" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Tools: Python · Generative AI</span>
+										<h2>Competitive Pricing Analysis for Personal Care E-Commerce</h2>
+									</header>
+									<span class="image fit"><img src="images/pic-personal-care-ecommerce-web-scraping.jpg" alt="" /></span>
+									<p>Python-based web scraping pipeline that automates competitor price monitoring in the Argentine personal care e-commerce market, enabling structured pricing comparison and strategic positioning analysis.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/LucilaAldana/personal-care-ecommerce-pricing-analysis" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Tools: Excel · Generative AI</span>
+										<h2>Optimizing Bike Sales Through Targeted Advertising</h2>
+									</header>
+									<span class="image fit"><img src="images/pic-bike-store.jpg" alt="" /></span>
+									<p>Customer segmentation and regional performance analysis to improve advertising efficiency, increase conversion rates, and optimize budget allocation for a motorbike company through an interactive Excel dashboard.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/LucilaAldana/marketing-campaign-optimization-bike-sales" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Tools: Google Sheets · Generative AI</span>
+										<h2>Maven Tech's CRM Dashboard</h2>
+									</header>
+									<span class="image fit"><img src="images/pic-maven-tech.jpg" alt="" /></span>
+									<p>Interactive CRM sales dashboard in Google Sheets analyzing pipeline health, win rate, sales cycle length, and revenue performance across agents, regions, and product lines to support data-driven sales management and strategic planning.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/LucilaAldana/crm-sales-dashboard-tech-store" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Tools: Excel · Generative AI</span>
+										<h2>Sales Optimization & Customer Behavior Analysis for Maven Roasters</h2>
+									</header>
+									<span class="image fit"><img src="images/pic-maven-roasters.jpg" alt="" /></span>
+									<p>Transactional sales analysis across three NYC branch locations identifying revenue drivers, peak hours, product performance, and operational improvement opportunities through an interactive Excel dashboard.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/LucilaAldana/coffee-shop-sales-optimization-analysis" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Tools: Google Sheets · Generative AI</span>
+										<h2>Global Income & Cost of Living Trends 2024 (USD)</h2>
+									</header>
+									<span class="image fit"><img src="images/pic-global-income-afford.jpg" alt="" /></span>
+									<p>Comparative analysis of income, cost of living, and purchasing power across countries using a disposable income framework to evaluate affordability and financial stability for relocation and investment decisions through an interactive Google Sheets dashboard.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/LucilaAldana/global-income-cost-of-living-analysis-2024" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+							</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<p>I’m currently open to Junior Marketing Data Analyst and data-driven marketing roles.</p>
+							</section>
+							<section>
+								<h3>Address</h3>
+								<p>Based in Argentina | Open to remote and international relocation opportunities.</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p>lucilaaquinonez@gmail.com</p>
+							</section>
+							<section>
+							    <div class="cv-button">
+							      <a href="assets/Resume - Lucila Aldana Quiñonez.pdf" download class="button">Download Resume</a>
+							    </div>
+							</section>
+							<section>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/lucilaaquinonez/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">fa-linkedin</span></a></li>
+									<li><a href="https://github.com/LucilaAldana" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+					</footer>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+
+</html>
+
