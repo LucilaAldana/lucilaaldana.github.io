@@ -4728,7 +4728,7 @@ input, select, textarea {
 
 :root {
 	--laq-bg:        #F4FAFF;
-	--laq-bg-warm:   #F4FAFF;
+	--laq-bg-warm:   #FDFBF7;
 	--laq-navy:      #3C7A9D;
 	--laq-teal:      #0D8A6E;
 	--laq-pink:      #C96A7E;
@@ -4769,7 +4769,7 @@ body {
 #intro p em {
 	font-family: 'Playfair Display', Georgia, serif;
 	font-style: italic;
-	color: #C8E8F5;
+	color: #C96A7E;
 	font-size: 1.05em;
 }
 
