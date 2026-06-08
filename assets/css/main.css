@@ -6,7 +6,10 @@
 	--navy:     #3C7A9D;
 	--white:    #F4FAFF;
 	--sand:     #FDFBF7;
-	--font-wordmark: 'Outfit', sans-serif;
+	--dark:		#212931;
+	--green:	#0D8A6E;
+	--pink: 	#C96A7E;
+	--font-title: 'Outfit', sans-serif;
 	--font-body:     'Inter', sans-serif;
 	--font-tagline:  'Playfair Display', serif;
 }
@@ -198,7 +201,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: var(--font-wordmark);
+		font-family: var(--font-title);
 		font-weight: 500;
 		line-height: 1.5;
 		letter-spacing: 0.075em;
@@ -2095,7 +2098,7 @@ input, select, textarea {
 		border-radius: 0;
 		cursor: pointer;
 		display: inline-block;
-		font-family: var(--font-wordmark);
+		font-family: var(--font-title);
 		font-size: 0.8rem;
 		font-weight: 500;
 		letter-spacing: 0.075em;
@@ -2330,7 +2333,7 @@ input, select, textarea {
 
 	label {
 		display: block;
-		font-family: var(--font-wordmark);
+		font-family: var(--font-title);
 		font-weight: 500;
 		line-height: 1.5;
 		letter-spacing: 0.075em;
@@ -3607,7 +3610,7 @@ input, select, textarea {
 			border-style: solid;
 			border-color: var(--white);
 			border-width: 5px !important;
-			font-family: var(--font-wordmark);
+			font-family: var(--font-title);
 			font-size: 2.25rem;
 			font-weight: 500;
 			letter-spacing: 0.075em;
@@ -3732,7 +3735,7 @@ input, select, textarea {
 			-webkit-flex-shrink: 1;
 			-ms-flex-shrink: 1;
 			flex-shrink: 1;
-			font-family: var(--font-wordmark);
+			font-family: var(--font-title);
 			font-weight: 500;
 			letter-spacing: 0.075em;
 			list-style: none;
@@ -4429,7 +4432,7 @@ input, select, textarea {
 		position: relative;
 		color: rgba(244, 250, 255, 0.45);
 		cursor: default;
-		font-family: var(--font-wordmark);
+		font-family: var(--font-title);
 		font-size: 0.8rem;
 		font-weight: 500;
 		letter-spacing: 0.075em;
@@ -4539,7 +4542,7 @@ input, select, textarea {
 		right: 0.75rem;
 		border: 0;
 		color: var(--white);
-		font-family: var(--font-wordmark);
+		font-family: var(--font-title);
 		font-size: 0.9rem;
 		font-weight: 500;
 		letter-spacing: 0.075em;
@@ -4631,7 +4634,7 @@ input, select, textarea {
 				#navPanel .links li a {
 					border-bottom: 0;
 					display: block;
-					font-family: var(--font-wordmark);
+					font-family: var(--font-title);
 					font-size: 0.9rem;
 					font-weight: 500;
 					letter-spacing: 0.075em;
@@ -4734,7 +4737,7 @@ input, select, textarea {
     position: absolute;
     top: 2rem;
     right: 2rem;
-    font-family: var(--font-wordmark);
+    font-family: var(--font-title);
     font-size: 0.75rem;
     font-weight: 500;
     letter-spacing: 2px;
