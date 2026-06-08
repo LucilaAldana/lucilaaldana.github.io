@@ -188,7 +188,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		font-weight: 1000;
+		font-weight: 600;
 	}
 
 	em, i {
@@ -3537,7 +3537,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		color: #212931;
+		color: #3C7A9D;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
