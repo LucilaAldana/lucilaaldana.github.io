@@ -4816,12 +4816,3 @@ h2.align-center {
     margin: 0 auto 2rem auto;
     display: block;
 }
-
-/* Logo image on about page */
-.about-logo {
-    width: 500px;
-    max-width: 80%;
-    height: auto;
-    margin: 0 auto 2rem auto;
-    display: block;
-}
