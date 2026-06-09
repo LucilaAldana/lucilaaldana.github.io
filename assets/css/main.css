@@ -4807,3 +4807,21 @@ input, select, textarea {
 h2.align-center {
     text-align: center;
 }
+
+/* Logo image in intro hero */
+.intro-logo {
+    width: 420px;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto 2rem auto;
+    display: block;
+}
+
+/* Logo image on about page */
+.about-logo {
+    width: 320px;
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto 2rem auto;
+    display: block;
+}
